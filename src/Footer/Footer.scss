@@ -1,0 +1,95 @@
+.footer {
+    padding: 70px 139px 68px 140px;
+    display: flex;
+  
+    h4 {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+  
+    p {
+      font-weight: 500;
+    }
+  
+    &__address {
+      margin-right: 212px;
+  
+      &__logo {
+        height: 60px;
+        margin-bottom: 18px;
+      }
+  
+      &__route {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        gap: 8px;
+        width: fit-content;
+        border-radius: 4px;
+        padding: 8px 18px 8px 29px;
+        background: rgba(7, 161, 89, 0.20);
+        
+        svg {
+          width: 16px;
+          height: 16px;
+          margin-bottom: 2px;
+        }
+  
+        p {
+          font-weight: 700;
+          font-size: 16px;
+          color: #137044;
+          text-align: center;
+          line-height: 24px;
+        }
+      }
+    }
+  
+    &__info {
+      margin-right: 100px;
+  
+      h4 {
+        margin-bottom: 12px;
+      }
+  
+      p {
+        display: inline-block;
+      }
+  
+      &__contact {
+        margin-bottom: 30px;
+  
+        div {
+          display: flex;
+          gap: 10px;
+        }
+    
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+  
+        p {
+          font-weight: 500;
+          line-height: 150.6%;
+        }
+        
+        &__phone {
+          margin-bottom: 11px;
+        }
+      }
+  
+      &__schedule {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  
+    &__indra {
+      &__logo {
+        width: 167px;
+      }
+    }
+  }

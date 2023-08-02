@@ -1,0 +1,41 @@
+
+.header {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 30px 140px 30px 140px;
+  
+    &__logo {
+      height: 80px;
+    }
+  
+    &__navbar {
+      ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 30px;
+        
+        li, a {
+          color: #FFF;
+          text-decoration: none;
+        }
+      }
+    
+      &__contact {
+        display: flex;
+        align-items: center;
+        
+        div {
+          padding: 10px 20px;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
