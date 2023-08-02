@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Poppins:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Poppins:wght@400;500;700;800&display=swap');
 
-body, h1, h4,  button {
+body, h1, h3, h4, button {
   margin: 0;
   font-family: 'Poppins';
   color: #1F2B25;
 }
 
-p, h2 {
+p, h2, label, input, textarea {
   margin: 0;
   font-family: 'Lato';
   color: #1F2B25;
@@ -16,7 +16,7 @@ p {
   font-size: 14px;
 }
 
-button {
+button, input[type=submit] {
   cursor: pointer;
   border: none;
 }
