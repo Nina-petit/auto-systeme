@@ -1,0 +1,39 @@
+.hero {
+    position: relative;
+    min-height: 700px;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  
+    &__content {
+      margin: 0 700px 0 140px;
+  
+      button {
+        background-color: #07A159;
+        color: #FFF;
+        font-size: 16px;
+        border-radius: 4px;
+        padding: 17px 34px 16px 35px;
+      }
+    }
+  }
+  
+  .box {
+    position: absolute;
+    width: 566px;
+    height: 182px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 16px 32px 0px rgba(31, 43, 37, 0.10);
+  }
+  
+  .footer-container {
+    background-color: #F5FAF8;
+    padding-top: 90px;
+  }

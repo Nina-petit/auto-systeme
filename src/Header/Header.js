@@ -1,5 +1,6 @@
 import './Header.scss';
 import logo from '../assets/logo-auto-systeme-min.jpg';
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -7,13 +8,13 @@ function Header() {
         <img src={logo} alt="Logo" className="header__logo"/>
         <nav className="header__navbar">
           <ul>
-            <li><a href="#" title="Aller à la page Accueil">Accueil</a></li>
-            <li><a href="#" title="Aller à la page Recherche de pièces">Recherche de pièces</a></li>
-            <li><a href="#" title="Aller à la page Vendez votre véhicule">Vendez votre véhicule</a></li>
-            <li><a href="#" title="Aller à la page Nos véhicules à vendre">Nos véhicules à vendre</a></li>
-            <li><a href="#" title="Aller à la page Nous contacter" className="header__navbar__contact">
+            <li><Link to="/" title="Aller à la page d'accueil">Accueil</Link></li>
+            <li><Link to="/part-search" title="Aller à la page d'accueil">Recherche de pièces</Link></li>
+            <li><Link to="/" title="Aller à la page d'accueil">Vendez votre véhicule</Link></li>
+            <li><Link to="/" title="Aller à la page d'accueil">Nos véhicules à vendre</Link></li>
+            <li><Link to="/" title="Aller à la page d'accueil" className="header__navbar__contact">
               <div><span>Nous contacter</span></div>
-            </a></li>
+            </Link></li>
           </ul>
         </nav>
       </div>
