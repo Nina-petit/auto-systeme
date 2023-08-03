@@ -1,22 +1,24 @@
-.part-search {
+.car-sell {
     background-color: #F5FAF8;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 172px 140px 90px 140px;
+        padding: 172px 0px 90px 0px;
+        width: 764px;
     
         h3 {
             text-align: center;
             font-size: 45px;
             font-weight: 500;
+            margin-bottom: 10px;
         }
     
         h4 {
             text-align: center;
             font-family: Lato;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 400;
             margin-bottom: 60px;
         }
@@ -84,42 +86,6 @@
                 font-family: Poppins;
                 text-align: center;
                 font-weight: 500;
-            }
-        }
-    
-        .info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-width: 367px;
-            background-color: #FFF;
-            border-radius: 8px;
-            border: 2px solid #C2D6CD;
-            padding: 40px 30px 40px 30px;
-            margin-top: 24px;
-    
-            p {
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 163.15%;
-            }
-    
-            &__line {
-                display: flex;
-                gap: 8px;
-                align-items: center;
-    
-                svg {
-                    width: 18px;
-                    height: 18px;
-                }
-            }
-    
-            &__separator {
-                width: 100%;
-                height: 1px;
-                background: #C2D6CD;
-                margin: 30px 0 30px 0;
             }
         }
     }
