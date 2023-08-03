@@ -1,5 +1,6 @@
 import './Profession.scss';
 import Footer from '../Footer/Footer';
+import { Link } from "react-router-dom";
 import profession from '../assets/profession.png';
 import collect from '../assets/collect.png';
 import destruction from '../assets/destruction.png';
@@ -49,7 +50,7 @@ function Profession() {
             <div className='profession__cta'>
                 <h3>Confiez-nous votre véhicule</h3>
                 <h4>Vous aurez l’assurance qu’il sera bien recyclé</h4>
-                <button>Je vends mon véhicule</button>
+                <Link to="/car-sell" title="Aller à la page Vendez votre véhicule">Je vends mon véhicule</Link>
             </div>
             <Footer/>
         </div>

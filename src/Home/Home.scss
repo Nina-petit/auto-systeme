@@ -11,12 +11,13 @@
     &__content {
       margin: 0 700px 0 140px;
   
-      button {
+      a {
+        text-decoration: none;
         background-color: #07A159;
         color: #FFF;
         font-size: 16px;
         border-radius: 4px;
-        padding: 17px 34px 16px 35px;
+        padding: 16px 34px 16px 34px;
       }
     }
   }
