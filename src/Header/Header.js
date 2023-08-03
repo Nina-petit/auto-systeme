@@ -15,7 +15,7 @@ function Header() {
             <li><Link className={location.pathname === "/part-search" && "current-page"} to="/part-search" title="Aller à la page Recherche de pièces">Recherche de pièces</Link></li>
             <li><Link className={location.pathname === "/car-sell" && "current-page"} to="/car-sell" title="Aller à la page Vendez votre véhicule">Vendez votre véhicule</Link></li>
             <li><Link to="/" title="Aller à la page d'accueil">Nos véhicules à vendre</Link></li>
-            <li><Link to="/" title="Aller à la page d'accueil" className={`header__navbar__contact ${location.pathname !== "/" && "header__navbar__contact__dark"}`}>
+            <li><Link to="/contact" title="Aller à la page de contact" className={`header__navbar__contact ${location.pathname !== "/" && "header__navbar__contact__dark"}`}>
               <div><span>Nous contacter</span></div>
             </Link></li>
           </ul>

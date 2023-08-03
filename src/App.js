@@ -5,6 +5,7 @@ import Header from './Header/Header';
 import Home from './Home/Home';
 import PartSearch from './PartSearch/PartSearch';
 import CarSell from './CarSell/CarSell';
+import Contact from './Contact/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" exact element={<Home/>} />
         <Route path="/part-search" element={<PartSearch/>} />
         <Route path="/car-sell" element={<CarSell/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Router>
   );
