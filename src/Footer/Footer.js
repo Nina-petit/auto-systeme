@@ -1,4 +1,5 @@
 import './Footer.scss';
+import { useLocation } from "react-router-dom";
 import logo from '../assets/logo-auto-systeme-min.jpg';
 import logo_indra from '../assets/logo-indra.png';
 import { ReactComponent as Route } from '../assets/route.svg';
@@ -6,8 +7,10 @@ import { ReactComponent as Phone } from '../assets/phone.svg';
 import { ReactComponent as Mail } from '../assets/mail.svg';
 
 function Footer() {
+    const location = useLocation();
+
     return (
-        <div className="footer">
+        <div className={`footer ${(location.pathname !== "/" && location.pathname !== "/profession") && "footer__dark"}`}>
             <div className="footer__address">
             <img src={logo} alt="Logo" className="footer__address__logo"/>
             <h4>Auto Systeme</h4>

@@ -1,6 +1,26 @@
 .footer {
     padding: 70px 139px 68px 140px;
     display: flex;
+
+    &__dark {
+      background-color: #216E4A;
+
+      h4, p, button {
+        color: #FFF;
+      }
+
+      svg {
+        fill: #FFF;
+      }
+
+      .footer__address__route {
+        background-color: rgba(255, 255, 255, 0.4);
+        
+        p {
+          color: #FFF;
+        }
+      }
+    }
   
     h4 {
       font-size: 16px;
@@ -22,6 +42,7 @@
       }
   
       &__route {
+        cursor: pointer;
         display: flex;
         align-items: center;
         margin-top: 16px;
