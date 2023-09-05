@@ -22,7 +22,7 @@ function CarSell() {
                         <form>
                             <div className='form__inputs'>
                                 <label>
-                                    Nom et Prénom *
+                                    Nom et Prénom
                                     <input type="text" value={name} onChange={e => setName(e.target.value)} placeholder='Nom et Prénom'/>
                                 </label>
                                 <label>
