@@ -1,11 +1,9 @@
 # Auto Systeme <img src="./src/assets/logo-auto-systeme-min.jpg" alt="Logo de mon projet" width="50" style="position: relative; margin-left: 10px; top: 10px;"/>
 
+[Voir le site en ligne](https://auto-systeme-152c0b3c108d.herokuapp.com)\
 Ce projet a été créé pour présenter une casse automobile. Il est encore en construction. 🛠️
 
-<div style="display: flex; width: '100%'; gap: 20px;">
-    <img src="./src/assets/hero-screenshot.png" alt="Capture d'écran de la page d'accueil" style="max-width: 50%;"/>
-    <img src="./src/assets/form-screenshot.png" alt="Capture d'écran de la page de formulaire de recherche de pièces" style="max-width: 50%;"/>
-</div>
+![Capture d'écran de mon projet](./src/assets/screenshot.png)
 
 ## Technologies utilisées
 
