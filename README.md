@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Auto Systeme <img src="./src/assets/logo-auto-systeme-min.jpg" alt="Logo de mon projet" width="50" style="position: relative; margin-left: 10px; top: 10px;"/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet a été créé pour présenter une casse automobile. Il est encore en construction. 🛠️
 
-## Available Scripts
+<div style="display: flex; width: '100%'; gap: 20px;">
+    <img src="./src/assets/hero-screenshot.png" alt="Capture d'écran de la page d'accueil" style="max-width: 50%;"/>
+    <img src="./src/assets/form-screenshot.png" alt="Capture d'écran de la page de formulaire de recherche de pièces" style="max-width: 50%;"/>
+</div>
 
-In the project directory, you can run:
+## Technologies utilisées
 
-### `npm start`
+- React.js
+- React Router DOM
+- Javascript
+- Sass
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+git clone https://github.com/Nina-petit/auto-systeme.git
+cd auto-systeme
+npm install
+npm start
+```
 
-### `npm test`
+## Fonctionnalités à venir
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Sur la page d'accueil, un formulaire permettra à l'utilisateur.ice d'entrer sa plaque d'immatriculation, ce qui permettra de détecter à quel type de véhicule elle correspond, pour ensuite voir les pièces détachées actuellement disponibles pour ce véhicule.
+- Sur la page Recherche de pièces et Nos véhicules à vendre, intégration d'un iFrame du site web Opisto, qui permettra de trouver et d'acheter en ligne les pièces et véhicules actuellement vendues par Auto Systeme.
 
-### `npm run build`
+## Contact et autres informations
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Mon site personnel avec portfolio](https://nina-petit.herokuapp.com)
+- [GitHub](https://www.linkedin.com/in/nina-petit-80b3b2190/)
+- [LinkedIn](https://www.linkedin.com/in/nina-petit-80b3b2190/)
