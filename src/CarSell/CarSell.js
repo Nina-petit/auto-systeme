@@ -17,7 +17,7 @@ function CarSell() {
             <div className="car-sell__content">
                 <div className="form">
                     <h3>Confiez-nous votre véhicule</h3>
-                    <h4>Vous avez un véhicule à vendre, nous procédons à son enlèvement ou vous accueillons pour la livraison dans nos locaux (sauf le samedi). Après avoir pris connaissance de l’état de votre véhicule, nous vous ferons parvenir notre meilleure offre, puis nous nous chargerons de le recycler dans les règles.</h4>
+                    <h4>Vous avez un véhicule à vendre, nous procédons à son enlèvement ou vous accueillons pour la livraison dans nos locaux (sauf le samedi). Après avoir pris connaissance de l’état de votre véhicule, nous vous ferons parvenir notre meilleure offre, puis nous nous chargerons de le recycler dans les règles ou de le confier à notre réseau de réparateurs en France ou à l'export pour le remettre en circulation.</h4>
                     <div className='form-content'>
                         <form>
                             <div className='form__inputs'>

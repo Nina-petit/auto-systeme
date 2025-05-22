@@ -34,9 +34,8 @@ function Footer() {
             </div>
             <h4>Horaires d'ouverture</h4>
             <div className="footer__info__schedule">
-                <p><p style={{fontWeight: 700}}>Lundi:</p> 14h-18h</p>
-                <p><p style={{fontWeight: 700}}>Du mardi au vendredi:</p> 9h-12h30 / 14h-18h</p>
-                <p><p style={{fontWeight: 700}}>Samedi:</p> 9h-13h</p>
+                <p><p style={{fontWeight: 700}}>Lundi au vendredi:</p> 9h-12h / 14h-18h</p>
+                <p>Fermé le samedi</p>
             </div>
             </div>
             <div className="footer__indra">
