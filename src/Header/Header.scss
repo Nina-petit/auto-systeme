@@ -1,20 +1,13 @@
-
 .header {
-  &__light {
-    ul li a {
-      color: #FFF;
-    }
-  }
-
   overflow: hidden;
   position: absolute;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  right: 0;
-  left: 0;
   z-index: 1;
-  padding: 30px 140px 30px 140px;
+  padding: 30px 140px;
 
   &__logo {
     height: 80px;
@@ -24,41 +17,99 @@
     ul {
       display: flex;
       align-items: center;
-      list-style-type: none;
+      list-style: none;
       gap: 30px;
-      
-      li, a {
-        color: #1F2B25;
-        text-decoration: none;
-        font-size: 16px;
-      }
-    }
-  
-    &__contact {
-      display: flex;
-      align-items: center;
-      
-      div {
-        padding: 10px 20px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 4px;
-      }
 
-      &__dark {
-        div {
-          background-color: rgba(7, 161, 89, 0.2);
-          span {
-            color: #137044;
-            font-weight: 700;
+      li {
+        a:not(.header__navbar__contact) {
+          position: relative;
+          display: inline-block;
+          color: #1F2B25;
+          text-decoration: none;
+          font-size: 16px;
+          transition: color 0.3s ease;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+          }
+
+          &:hover,
+          &.current-page {
+            color: #01A357;
+          }
+
+          &:hover::after,
+          &.current-page::after {
+            transform: scaleX(1);
+          }
+        }
+
+        a.header__navbar__contact {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+
+          div {
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+          }
+
+          &:hover div {
+            background-color: rgba(255, 255, 255, 0.8);
+
+            span {
+              color: rgba(0, 0, 0, 0.6);
+            }
+          }
+
+          &.header__navbar__contact__dark div {
+            background-color: rgba(7, 161, 89, 0.2);
+
+            span {
+              color: #137044;
+              font-weight: 700;
+            }
+          }
+
+          &.header__navbar__contact__dark.current-page,
+          &.header__navbar__contact__dark:hover div {
+            background-color: rgba(7, 161, 89, 0.8);
+
+            span {
+              color: #FFF;
+              font-weight: 700;
+            }
           }
         }
       }
     }
+  }
 
-    .current-page {
-      color: #01A357;
-      font-weight: 700;
-      text-decoration-line: underline;
+  &.header__light {
+    .header__navbar {
+      ul {
+        li {
+          a:not(.header__navbar__contact) {
+            color: #FFF;
+          }
+
+          a:not(.header__navbar__contact):hover,
+          a:not(.header__navbar__contact).current-page {
+            color: #01A357;
+          }
+        }
+      }
     }
   }
 }
