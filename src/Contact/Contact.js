@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Contact.scss';
 import Footer from '../Footer/Footer';
 import { ReactComponent as Cash } from '../assets/cash.svg';
@@ -8,19 +8,6 @@ import shop from '../assets/shop.png';
 import administration from '../assets/administration.png';
 
 function Contact() {
-    useEffect(() => {
-        let maxCardHeight = 0;
-        const cards = document.getElementsByClassName('card');
-        for (let i = 0; i < cards.length; i++) {
-            const cardHeight = cards[i].offsetHeight;
-            if (cardHeight > maxCardHeight) {
-                maxCardHeight = cardHeight;
-            }
-        }
-        for (let i = 0; i < cards.length; i++) {
-            cards[i].style.height = `${maxCardHeight}px`;
-        }
-    }, []);
 
     return (
         <div className="contact">
