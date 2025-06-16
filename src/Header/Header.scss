@@ -11,6 +11,7 @@
 
   &__logo {
     height: 80px;
+    cursor: 'pointer';
   }
 
   &__navbar {
@@ -69,7 +70,7 @@
             background-color: rgba(255, 255, 255, 0.8);
 
             span {
-              color: rgba(0, 0, 0, 0.6);
+              color: rgba(0, 0, 0);
             }
           }
 

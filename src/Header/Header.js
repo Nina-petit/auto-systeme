@@ -8,7 +8,13 @@ function Header() {
 
     return (
       <div className={`header ${location.pathname === "/" && "header__light"}`}>
-        <Link style={{cursor: 'pointer'}} to="/" title="Aller à la page d'accueil"><img src={logo} alt="Logo" className="header__logo"/></Link>
+        <Link
+          to="/"
+          onClick={() => window.scrollTo(0, 0)}
+          title="Aller à la page d'accueil"
+        >
+          <img src={logo} alt="Logo" className="header__logo"/>
+        </Link>
         <nav className="header__navbar">
           <ul>
             <li><Link className={location.pathname === "/" && "current-page"} to="/" title="Aller à la page d'accueil">Accueil</Link></li>
