@@ -102,3 +102,13 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .contact__content {
+        padding: 120px 20px 60px 20px;
+
+        .card {
+            width: 100%;
+        }
+    }
+}
