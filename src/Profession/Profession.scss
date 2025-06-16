@@ -201,3 +201,29 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .profession__explanation {
+        padding: 120px 20px 60px 20px;
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .profession__produced {
+        padding: 40px 20px 80px 20px;
+    }
+
+    .profession__process {
+        padding: 60px 20px 120px 20px;
+
+        &__content__card {
+            width: 100%;
+        }
+    }
+
+    .profession__cta {
+        padding: 60px 20px;
+    }
+}

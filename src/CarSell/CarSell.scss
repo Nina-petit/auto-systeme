@@ -92,5 +92,28 @@
             }
         }
     }
+
+@media (max-width: 768px) {
+    .car-sell__content .form {
+        padding: 120px 20px 60px 20px;
+        width: 100%;
+
+        &-content {
+            flex-direction: column;
+        }
+
+        form {
+            margin-right: 0;
+
+            .form__inputs {
+                column-gap: 0;
+
+                label {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
     
 }
