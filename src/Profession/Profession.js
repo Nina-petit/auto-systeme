@@ -19,12 +19,12 @@ import recycling from '../assets/recycling.png';
 function Profession() {
     const producedItems = [
         { quantity: '2 054 T', type: "de ferraille", icon: scrap },
-        { quantity: '80,13 T', type: "d'aluminium", icon: sheet },
-        { quantity: '3,12 T', type: "de faisceaux", icon: electrics },
-        { quantity: '26,63', type: "de jantes", icon: rims },
+        { quantity: '80 T', type: "d'aluminium", icon: sheet },
+        { quantity: '3 T', type: "de faisceaux", icon: electrics },
+        { quantity: '26 T', type: "de jantes", icon: rims },
         { quantity: '3 052', type: "VHU traités", icon: automobile },
         { quantity: '60 000', type: "pièces en stock", icon: part },
-        { quantity: '4 800', type: "client.e.s", icon: client },
+        { quantity: '15 000', type: "client.e.s", icon: client },
     ];
 
     const processSteps = [
