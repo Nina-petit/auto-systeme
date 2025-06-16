@@ -164,3 +164,41 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  .footer__address,
+  .footer__info {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .footer__address__route {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer__address__logo {
+    height: 50px;
+  }
+
+  .footer__info__contact div {
+    justify-content: center;
+  }
+
+  .footer__indra__logo {
+    width: 120px;
+  }
+}
