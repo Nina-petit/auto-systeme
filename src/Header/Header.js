@@ -34,7 +34,7 @@ function Header() {
   }, [menuOpen]);
 
   return (
-    <div className={`header ${location.pathname === "/" && "header__light"}`}>
+    <div className={`header ${(location.pathname === "/" && !menuOpen) && "header__light"}`}>
       <Link
         to="/"
         onClick={handleLinkClick}

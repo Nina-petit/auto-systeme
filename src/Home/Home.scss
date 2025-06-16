@@ -58,6 +58,8 @@
     &__content {
       margin: 0 40px;
 
+      margin-top: 20px;
+
       a {
         padding: 12px 24px;
       }
@@ -72,5 +74,6 @@
 @media (max-width: 480px) {
   .hero__content {
     margin: 0 20px;
+    margin-top: 20px;
   }
 }
