@@ -15,6 +15,7 @@
   }
 
   &__navbar {
+    z-index: 1;
     ul {
       display: flex;
       align-items: center;
@@ -109,6 +110,15 @@
           a:not(.header__navbar__contact).current-page {
             color: #01A357;
           }
+
+          .header__navbar.open & {
+            color: #1F2B25;
+
+            &.current-page,
+            &:hover {
+              color: #01A357;
+            }
+          }
         }
       }
     }
@@ -119,6 +129,7 @@
     width: 30px;
     height: 21px;
     position: relative;
+    z-index: 2;
     background: none;
     border: none;
     padding: 0;
@@ -156,6 +167,9 @@
 
       span:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
+      }
+      span {
+        background-color: #1F2B25;
       }
     }
   }
@@ -195,6 +209,10 @@
     &.header__light {
       .header__burger span {
         background-color: #FFF;
+      }
+
+      .header__burger.open span {
+        background-color: #1F2B25;
       }
     }
   }
