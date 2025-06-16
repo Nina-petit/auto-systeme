@@ -17,3 +17,25 @@ h2 {
   line-height: 163.15%;
   margin-bottom: 60px;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+}
