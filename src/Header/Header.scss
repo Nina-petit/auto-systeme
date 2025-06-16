@@ -113,4 +113,95 @@
       }
     }
   }
+
+  &__burger {
+    display: none;
+    width: 30px;
+    height: 21px;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #1F2B25;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    span:nth-child(1) {
+      top: 0;
+    }
+
+    span:nth-child(2) {
+      top: 9px;
+    }
+
+    span:nth-child(3) {
+      bottom: 0;
+    }
+
+    &.open {
+      span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 40px;
+
+    &__burger {
+      display: block;
+    }
+
+    &__navbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #FFF;
+      padding-top: 100px;
+      padding-left: 40px;
+      padding-right: 40px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      &.open {
+        transform: translateX(0);
+      }
+    }
+
+    &.header__light {
+      .header__burger span {
+        background-color: #FFF;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+  }
 }
