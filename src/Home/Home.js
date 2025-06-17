@@ -15,7 +15,7 @@ function Home() {
             </div>
             </div>
             <div className="presentation">
-                <video src={presentationVideo} controls />
+                <video src={presentationVideo} controls autoPlay muted playsInline loop/>
             </div>
             <div className="footer-container">
                 <Footer/>
