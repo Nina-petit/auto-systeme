@@ -22,7 +22,7 @@ function PartSearch() {
         e.preventDefault();
         const text = `Nom et Prénom: ${name}\nEmail: ${mail}\nTéléphone: ${phone}\nEntreprise: ${company}\nDésignation courante du véhicule: ${designation}\nImmatriculation: ${registration}\nPièce(s) recherchée(s): ${parts}\nPrécisions: ${details}`;
         try {
-            const res = await fetch('/send-email', {
+            const res = await fetch('http://192.168.1.26:4000/send-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ subject: 'Demande de recherche de pièce', text }),

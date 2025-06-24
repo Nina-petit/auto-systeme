@@ -17,7 +17,7 @@ function CarSell() {
         e.preventDefault();
         const text = `Nom et Prénom: ${name}\nEmail: ${mail}\nTéléphone: ${phone}\nType de véhicule: ${vehicleType}\nImmatriculation: ${registration}\nDate de première mise en circulation: ${firstCirculationDate}\nKilomètres au compteur: ${kilometers}\nDescription du véhicule et de son état: ${description}`;
         try {
-            const res = await fetch('/send-email', {
+            const res = await fetch('http://192.168.1.26:4000/send-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ subject: 'Demande de reprise de véhicule', text }),
