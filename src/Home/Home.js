@@ -7,19 +7,17 @@ import presentationVideo from '../assets/presentation.mp4';
 function Home() {
     return (
         <div className="home">
-            <div className="hero" style={{backgroundImage: `url(${hero})`}}>
-            <div className="hero__content">
-                <h1>Vous recherchez une pièce automobile?</h1>
-                <h2>Forts d’un stock de plus de 60 000 pièces de réemploi, démontées étiquetées garanties, d’un stock de plus de 1000 véhicules en cours de démontage et des arrivages quotidiens, nous nous efforçons de vous trouver les pièces qui correspondent à votre demande.</h2>
-                <Link to="/part-search" title="Aller à la page Recherche de pièces">Trouver une pièce</Link>
-            </div>
+            <div className="hero" style={{ backgroundImage: `url(${hero})` }}>
+                <div className="hero__content">
+                    <h1>Vous recherchez une pièce automobile?</h1>
+                    <h2>Forts d’un stock de plus de 60 000 pièces de réemploi, démontées étiquetées garanties, d’un stock de plus de 1000 véhicules en cours de démontage et des arrivages quotidiens, nous nous efforçons de vous trouver les pièces qui correspondent à votre demande.</h2>
+                    <Link to="/part-search" title="Aller à la page Recherche de pièces">Trouver une pièce</Link>
+                </div>
             </div>
             <div className="presentation">
-                <video src={presentationVideo} controls autoPlay muted playsInline loop/>
+                <video src={presentationVideo} controls autoPlay muted playsInline loop />
             </div>
-            <div className="footer-container">
-                <Footer/>
-            </div>
+            <Footer />
         </div>
     )
 };
