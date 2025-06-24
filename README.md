@@ -21,6 +21,13 @@ npm install
 npm start
 ```
 
+Pour envoyer les formulaires par email, un petit serveur Express est inclus.
+Créez un fichier `.env` inspiré de `.env.example` puis lancez :
+
+```
+node server.js
+```
+
 ## Fonctionnalités à venir
 
 - Sur la page d'accueil, un formulaire permettra à l'utilisateur.ice d'entrer sa plaque d'immatriculation, ce qui permettra de détecter à quel type de véhicule elle correspond, pour ensuite voir les pièces détachées actuellement disponibles pour ce véhicule.

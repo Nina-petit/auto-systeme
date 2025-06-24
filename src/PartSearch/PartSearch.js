@@ -7,7 +7,6 @@ import { ReactComponent as Cash } from '../assets/cash.svg';
 import { ReactComponent as Check } from '../assets/check.svg';
 import { ReactComponent as CreditCard } from '../assets/credit-card.svg';
 
-
 function PartSearch() {
     const [name, setName] = useState('');
     const [mail, setMail] = useState('');
@@ -17,13 +16,26 @@ function PartSearch() {
     const [registration, setRegistration] = useState('');
     const [parts, setParts] = useState('');
     const [details, setDetails] = useState('');
+    const [status, setStatus] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const body = `Nom et Prénom: ${name}\nEmail: ${mail}\nTéléphone: ${phone}\nEntreprise: ${company}\nDésignation courante du véhicule: ${designation}\nImmatriculation: ${registration}\nPièce(s) recherchée(s): ${parts}\nPrécisions: ${details}`;
-        window.location.href = `mailto:test@gmail.com?subject=Demande de recherche de pièce&body=${encodeURIComponent(body)}`;
+        const text = `Nom et Prénom: ${name}\nEmail: ${mail}\nTéléphone: ${phone}\nEntreprise: ${company}\nDésignation courante du véhicule: ${designation}\nImmatriculation: ${registration}\nPièce(s) recherchée(s): ${parts}\nPrécisions: ${details}`;
+        try {
+            const res = await fetch('/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ subject: 'Demande de recherche de pièce', text }),
+            });
+            if (res.ok) {
+                setStatus('Votre demande a bien été envoyée.');
+            } else {
+                setStatus("Erreur lors de l'envoi de votre demande.");
+            }
+        } catch (err) {
+            setStatus("Erreur lors de l'envoi de votre demande.");
+        }
     };
-
 
     return (
         <div className="part-search">
@@ -68,6 +80,7 @@ function PartSearch() {
                         </label>
                         <input type="submit" value="Envoyer la demande" />
                     </form>
+                    {status && <p className='status'>{status}</p>}
                     <div className='info'>
                         <p style={{marginBottom: '6px'}}>Pour faire une demande par téléphone:</p>
                         <div className='info__line'>
