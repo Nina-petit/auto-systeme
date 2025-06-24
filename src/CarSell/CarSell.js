@@ -11,11 +11,25 @@ function CarSell() {
     const [firstCirculationDate, setFirstCirculationDate] = useState('');
     const [kilometers, setKilometers] = useState('');
     const [description, setDescription] = useState('');
+    const [status, setStatus] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const body = `Nom et Prénom: ${name}\nEmail: ${mail}\nTéléphone: ${phone}\nType de véhicule: ${vehicleType}\nImmatriculation: ${registration}\nDate de première mise en circulation: ${firstCirculationDate}\nKilomètres au compteur: ${kilometers}\nDescription du véhicule et de son état: ${description}`;
-        window.location.href = `mailto:test@gmail.com?subject=Demande de reprise de véhicule&body=${encodeURIComponent(body)}`;
+        const text = `Nom et Prénom: ${name}\nEmail: ${mail}\nTéléphone: ${phone}\nType de véhicule: ${vehicleType}\nImmatriculation: ${registration}\nDate de première mise en circulation: ${firstCirculationDate}\nKilomètres au compteur: ${kilometers}\nDescription du véhicule et de son état: ${description}`;
+        try {
+            const res = await fetch('/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ subject: 'Demande de reprise de véhicule', text }),
+            });
+            if (res.ok) {
+                setStatus('Votre demande a bien été envoyée.');
+            } else {
+                setStatus("Erreur lors de l'envoi de votre demande.");
+            }
+        } catch (err) {
+            setStatus("Erreur lors de l'envoi de votre demande.");
+        }
     };
 
     return (
@@ -62,6 +76,7 @@ function CarSell() {
                             </label>
                             <input type="submit" value="Envoyer la demande" />
                         </form>
+                        {status && <p className='status'>{status}</p>}
                     </div>
                 </div>
             </div>
