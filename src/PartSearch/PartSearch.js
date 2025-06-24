@@ -18,6 +18,12 @@ function PartSearch() {
     const [parts, setParts] = useState('');
     const [details, setDetails] = useState('');
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const body = `Nom et Prénom: ${name}\nEmail: ${mail}\nTéléphone: ${phone}\nEntreprise: ${company}\nDésignation courante du véhicule: ${designation}\nImmatriculation: ${registration}\nPièce(s) recherchée(s): ${parts}\nPrécisions: ${details}`;
+        window.location.href = `mailto:test@gmail.com?subject=Demande de recherche de pièce&body=${encodeURIComponent(body)}`;
+    };
+
 
     return (
         <div className="part-search">
@@ -25,7 +31,7 @@ function PartSearch() {
                 <h3>Vous recherchez une pièce automobile?</h3>
                 <h4>Envoyez-nous une demande:</h4>
                 <div className='form-content'>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className='form__inputs'>
                             <label>
                                 Nom et Prénom

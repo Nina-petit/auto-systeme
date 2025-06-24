@@ -12,6 +12,12 @@ function CarSell() {
     const [kilometers, setKilometers] = useState('');
     const [description, setDescription] = useState('');
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const body = `Nom et Prénom: ${name}\nEmail: ${mail}\nTéléphone: ${phone}\nType de véhicule: ${vehicleType}\nImmatriculation: ${registration}\nDate de première mise en circulation: ${firstCirculationDate}\nKilomètres au compteur: ${kilometers}\nDescription du véhicule et de son état: ${description}`;
+        window.location.href = `mailto:test@gmail.com?subject=Demande de reprise de véhicule&body=${encodeURIComponent(body)}`;
+    };
+
     return (
         <div className="car-sell">
             <div className="car-sell__content">
@@ -19,7 +25,7 @@ function CarSell() {
                     <h3>Confiez-nous votre véhicule</h3>
                     <h4>Vous avez un véhicule à vendre, nous procédons à son enlèvement ou vous accueillons pour la livraison dans nos locaux (sauf le samedi). Après avoir pris connaissance de l’état de votre véhicule, nous vous ferons parvenir notre meilleure offre, puis nous nous chargerons de le recycler dans les règles ou de le confier à notre réseau de réparateurs en France ou à l'export pour le remettre en circulation.</h4>
                     <div className='form-content'>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div className='form__inputs'>
                                 <label>
                                     Nom et Prénom
